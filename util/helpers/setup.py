@@ -18,12 +18,8 @@ def checkpoint(config, f):
 def get_data_loader(config, **kwargs):
     if config.dataset == "cifar10":
         return CIFAR10(config.data_path, config.batch_size, **kwargs)
-    if config.dataset == "cifar100":
+    elif config.dataset == "cifar100":
         return CIFAR100(config.data_path, config.batch_size, **kwargs)
-    if config.dataset == "fashionmnist":
-        return FashionMNIST(config.data_path, config.batch_size, **kwargs)
-    if config.dataset == "svhn":
-        return SVHN(config.data_path, config.batch_size, **kwargs)
 
 
 def make_dirs(*args):
