@@ -39,8 +39,6 @@ def main():
 
     if config.model == "resnet20":
         f = resnet20(config)
-    elif config.model == "resnet44":
-        f = resnet44(config)
     elif config.model == "resnet56":
         f = resnet56(config)
     elif config.model == "resnet110":
