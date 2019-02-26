@@ -4,7 +4,7 @@ This repository contains code for the normalization approach described in *"Mode
 
 Execute `train.py` to train a ResNet20 on CIFAR10 from scratch, with all its batch normalizations (BN) replaced with mode normalization (MN) – thereby jointly normalizing samples similar to each other with individual means and standard deviations.
 
-To train a deeper architecture, run `train.py --model resnet56`. To learn on CIFAR100, pass `--dataset cifar100`. An overview over all commands is accessed via `train.py --help`.
+To train a different architecture, run `train.py --model resnet56`. To learn on CIFAR100, pass `--dataset cifar100`. For an overview over commands use `train.py --help`.
 
 This repository implements two modes of operation for MN, described below. 
 
@@ -12,7 +12,7 @@ This repository implements two modes of operation for MN, described below.
 
 In the default setting `--mn full`, all of the model's BNs are replaced with MN.
 
-A predefined jobs is located in the `jobs/full` folder. In this seeded example a ResNet56 is trained on CIFAR100, with a final test error of **28.75%**.
+A predefined job is located in the `jobs/full` folder. In this seeded example a ResNet56 is trained on CIFAR100, with a final test error of **28.75%**.
 
 > While the code has a `--seed` parameter in place, this does not necessarily guarantee portability across devices, c.f. this [note](https://pytorch.org/docs/stable/notes/randomness.html) on the official PyTorch website.
 
