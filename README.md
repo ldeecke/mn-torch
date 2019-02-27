@@ -20,7 +20,7 @@ A predefined job is located in the `jobs/full` folder. In this seeded example a 
 
 By setting `--mn init`, only the initial BN is replaced with MN. Early on in the network the amount of variation is arguably highest, and the runtime increase from replacing a single BN unit is tiny.
 
-In `jobs/init` we include a trial for this alternative setup. We replaced the initial BN in a ResNet20 with MN and four modes on CIFAR10, obtaining a test error of **7.73%**.
+In `jobs/init` we include a trial for this alternative setup. We replaced the initial BN in a ResNet20 with MN and two modes on CIFAR10, obtaining a test error of **7.73%**.
 
 ## Reference
 
